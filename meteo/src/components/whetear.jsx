@@ -1,4 +1,4 @@
-// src/Weather.js
+
 import React from 'react';
 
 function Weather({ data }) {

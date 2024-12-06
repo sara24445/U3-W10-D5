@@ -1,13 +1,13 @@
 
+
 import React from 'react';
 
-function Search({ setCity, fetchWeather }) {
+function Search({ fetchWeather }) {
   const handleSearch = (event) => {
     event.preventDefault();
     const cityInput = event.target.elements.city.value;
     if (cityInput) {
-      setCity(cityInput);
-      fetchWeather(cityInput);
+      fetchWeather(cityInput); // Chiamata alla funzione per recuperare i dati meteo
     }
   };
 
